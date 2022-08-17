@@ -13,6 +13,21 @@ console.log(`${numberone}
 ${numbertwo}`);
 
 
-//التكليف 03
+// video 17 challenge 
 
+var title="Elzero";
+var description="Elzero web School";
+var date="25/10";
+
+var card = `
+<div class="card">
+<h1>${title}</h1>
+<p>${description}</p>
+<span>${date}</span>
+</div>
+`
+
+
+
+document.write(card.repeat(4));
  
