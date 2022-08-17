@@ -1,9 +1,11 @@
 //01 
       // Code One error cz javascript  loaded befor html
 
+// ------------     02
+// نوع العنصر هو h1
+// خواص ال CSS هي كالتالي ويجب إضافتها بواسطة JavaScript
 
 
-//02
 // var h1 = document.querySelector('h1').style;
 // h1.color = 'blue';
 // h1.fontSize = '80px';
