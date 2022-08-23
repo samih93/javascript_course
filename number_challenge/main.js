@@ -44,3 +44,4 @@ console.log(Number.parseInt(d));
 console.log();  // 66.67 => String
 console.log();  // 67 => Number
 
+
