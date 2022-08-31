@@ -83,9 +83,8 @@ let checker =  (zName) => (status) => (salary)=>status === "Available" ? `${zNam
         for(let i =0;i<data.length;i++)
         {
             let num = parseInt(data[i]);
-           // console.log(num);
-
-             if(num.toString()!=="NaN")
+            console.log(isNaN(num));
+             if(!isNaN(num))
             {
               //  console.log(true);
                 sum+=num;
