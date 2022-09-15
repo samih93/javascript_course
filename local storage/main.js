@@ -35,7 +35,6 @@ window.onload = function()
 }
 
 
-console.log(fontselect);
 fontselect.addEventListener('change',function(){
     console.log(this.value);
     localStorage.currentfont = `${this.value}`;
