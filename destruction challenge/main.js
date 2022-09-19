@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
   Destructuring
   - Challenge
@@ -32,3 +33,12 @@ console.log(title) ;
 console.log(age) ;
 console.log(available===true? "Available":"not Available") ;
 console.log(sk) ;
+=======
+
+let myfriends = ['ahmad','sayed','ali',['shady','amr',['mohamad','gamal']]];
+
+let [,,,[a,,[,b]]]= myfriends;
+
+console.log(a) ;// shady
+console.log(b) ;// gamal
+>>>>>>> 14b49f94ec8e13037a96bf586f3a7a4ff16a0d3c
