@@ -30,12 +30,12 @@ else {
     }
 
     // 1 - max < num3  ? ==> min - first max - num3 
-    if (max < num3) {
-        res += min + " - " + max + " - " + num3;
+    if (max > num3) {
+        res += max + " - " + `${min > num3 ? min + " - " + num3 : num3 + ' - ' + min}`;
     }
     // first max > num3  
     else {
-        res += `${min < num3 ? min + " - " + num3 : num3 + ' - ' + min}` + ' - ' + max;
+        res += num3 + ' - ' + max + ' - ' + min;
     }
 
 
