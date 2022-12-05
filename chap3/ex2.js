@@ -12,7 +12,7 @@ for (var i = 1; i <= Math.floor(n / 2); i++) {
 }
 
 if (sum == n) {
-    console.log(`n est parfait  == >${res}`);
+    console.log(`n  est parfait  == >${res}`);
 }
 else {
     console.log(`${n} nest pas parfait`);

@@ -10,7 +10,7 @@ while (n / 2 > 0) { // or n>0
 
     var temp = n;
 
-    n = Number(Math.floor(n / 2)); 0
+    n = Number(Math.floor(n / 2)); 7
 
     var rest = temp % 2; // 1
 
