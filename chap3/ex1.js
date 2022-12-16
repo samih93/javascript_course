@@ -4,7 +4,7 @@ var n = parseInt(prompt("enter un nb entier"));
 
 var resBinair = "";
 
-while (n / 2 > 0) { // or n>0 
+while (n>0) { // or  n / 2 > 0
 
     console.log(n);
 

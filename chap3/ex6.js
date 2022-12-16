@@ -1,12 +1,16 @@
 var n = parseInt(prompt("Entrer un nombre"));
-var res = "";
-for (var i = 2; i < n; i++) {
+var diviseurDe_N = "";
+
+for (var i = 2; i <= Math.floor(n / 2); i++) {
     if (n % i === 0) {
-        res += `${i},`;
+        diviseurDe_N += `${i},`;
     }
 }
-if (res != "") {
-    console.log(`Diviseur de ${n}  = 1,${res} ${n}`);
+
+
+
+if (diviseurDe_N != "") {
+    console.log(`Diviseur de ${n}  = 1,${diviseurDe_N} ${n}`);
 }
 else {
     console.log(`Diviseur de ${n} = 1 , ${n} (premier)`);
