@@ -1,4 +1,10 @@
-var tab = [30, 14, 13, 25, 4, 7, 20];
+var tab = [30, 40, 13, 25, 4, 7, 20];
+
+
+console.log(maxofArray(tab));
+console.log(maxofArray(tab));
+console.log(maxofArray(tab));
+
 
 // tab[2] = 13 
 

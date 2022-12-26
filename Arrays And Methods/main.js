@@ -11,7 +11,7 @@ myfriend1.push(myFriends[num-num],myFriends[myFriends.length-num]);
 myfriend1.push(myFriends[num- myfriend1.length]);
 console.log(myfriend1); // ["Ahmed", "Elham", "Osama"];
 
-let friends = ["Ahmed", "Eman", "Osama", "Gamal"];
+let friends = ["Ahmed", "Eman", "samih", "Gamal"];
 friends.shift();
 friends.pop();
 // Write Your Code Here

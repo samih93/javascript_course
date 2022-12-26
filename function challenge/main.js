@@ -18,3 +18,5 @@ function showDetails(a, b, c) {
 }
 
 showDetails(28, "samih", true);
+
+
