@@ -1,11 +1,5 @@
-let a = [12, 8, 15, 7, 10];
+let a = [8, 5, 3, 19, 12];
 
-
-//console.log(a.sort((a, b) => a - b));
-//[8,12,15,7,10]
-//[8,12,7,15,10]
-// [8,7,12,15,10]
-// [7,8,12,10,15]
 
 
 
@@ -24,6 +18,39 @@ function myfunction(tab) {
 
 }
 
+function indexOfminOfarray(index, tab) {
+    var min = tab[index];
+    var IndexminOfarray = index;
+    for (i = index; i < tab.length; i++) {
+        if (min > tab[i]) {
+            min = tab[i];
+            IndexminOfarray = i;
+
+        }
+    }
+    return IndexminOfarray;
+}
+
+
+function myfunction2(tab) {
+    for (j = 0; j < tab.length; j++) {
+        var indexminofarray = indexOfminOfarray(j, tab)
+        //  console.log(indexminofarray);
+        if (tab[j] > tab[indexminofarray]) {
+            //  alert(1);
+            var temp = tab[j];
+            tab[j] = tab[indexminofarray];
+            tab[indexminofarray] = temp;
+        }
+    }
+
+    return tab;
+
+}
+
+console.log(a);
+console.log(myfunction2(a));
+
 
 // function myfunction1(tab) {
 //     for (i = tab.length - 1; i >= 1; i++) {
@@ -41,5 +68,4 @@ function myfunction(tab) {
 // }
 
 
-console.log(myfunction1(a));
 
