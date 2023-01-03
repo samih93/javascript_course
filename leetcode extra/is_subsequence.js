@@ -14,23 +14,22 @@
 // Output: false
 var isSubsequence = function (s, t) {
     var res = "";
-    var index_find = -1;
+    var index_findInS = -1;
+    var index_findInT = -1;
     for (j = 0; j < s.length; j++) {
 
         for (i = 0; i < t.length; i++) {
 
 
-            if (t[i] == s[j] && index_find != i && index_find < i) {
-                // if (res.includes(t[i])) {
-                //     res = t[i];
-                //     index_find = i
-                //     console.log("new res :" + res);
-                // }
-                // else {
-                res += s[j];
-                console.log(res);
-                index_find = i;
-                //     }
+            if (t[i] == s[j] && index_findInS < j) {
+                if (index_findInT < i) {
+                    res += s[j];
+                    index_findInS = j;
+                    index_findInT = i;
+                    //  console.log("new res :" + res);
+                }
+
+
 
 
             }
@@ -43,4 +42,5 @@ var isSubsequence = function (s, t) {
     return false;
 };
 
+console.log(isSubsequence("abc", "ahbgdc"));
 
