@@ -25,12 +25,14 @@ function avgofArray(array) {
     if (!isNaN(array[i]))
       sum += array[i];
   }
-  
+
   return sum / array.length;
 }
 //d
 let t = [15, 8, 7, 16, 20, 47, 11, 14, 27, 32, 9, 17, 8, 2, 49, 17];
 
-console.log(`max of array  ${maxofArray(t)}`);
-console.log(`min of array  ${minofArray(t)}`);
-console.log(`avg of array  ${avgofArray(t)}`);
+// console.log(`max of array  ${maxofArray(t)}`);
+// console.log(`min of array  ${minofArray(t)}`);
+// console.log(`avg of array  ${avgofArray(t)}`);
+
+console.log(Math.max(...t));

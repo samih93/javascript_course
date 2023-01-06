@@ -35,7 +35,7 @@
 // 'A' again maps to 'Z'
 
 
-var isIsomorphic = function (s, t) {
+var Isomorphic = function (s, t) {
 
     if (s.length == t.length) {
         var map = new Map();
@@ -67,6 +67,6 @@ var isIsomorphic = function (s, t) {
 
 };
 
-console.log(isIsomorphic("bgbc", "baba"));
+console.log(Isomorphic("bgbc", "baba"));
 
 
