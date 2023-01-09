@@ -1,10 +1,72 @@
+/*
+  DOM
+  - What Is DOM
+  - DOM Selectors
+  --- Find Element By ID
+  --- Find Element By Tag Name
+  --- Find Element By Class Name
+  --- Find Element By CSS Selectors
+  --- Find Element By Collection
+  ------ title
+  ------ body
+  ------ images
+  ------ forms
+  ------ links
+*/
+
+
+/*
+  BOM [Browser Object Model]
+  - Introduction
+  --- Window Object Is The Browser Window
+  --- Window Contain The Document Object
+  --- All Global Variables And Objects And Functions Are Members Of Window Object
+  ------ Test Document And Console
+  - What Can We Do With Window Object ?
+  --- Open Window
+  --- Close Window
+  --- Move Window
+  --- Resize Window
+  --- Print Document
+  --- Run Code After Period Of Time Once Or More
+  --- Fully Control The URL
+  --- Save Data Inside Browser To Use Later
+*/
+
+/*
+  DOM [Create Elements]
+  - createElement
+  - createComment
+  - createTextNode
+  - createAttribute
+  - appendChild
+*/
+
+// let myElement = document.createElement("div");
+// let myAttr = document.createAttribute("data-custom");
+// let myText = document.createTextNode("Product One");
+// let myComment = document.createComment("This Is Div");
+
+// myElement.className = "product";
+// myElement.setAttributeNode(myAttr); // set empty attribute  and u can modify it later
+// myElement.setAttribute("data-test", "Testing");
+
+// // Append Comment To Element
+// myElement.appendChild(myComment);
+
+// // Append Text To Element
+// myElement.appendChild(myText);
+
+// // Append Element To Body
+// document.body.appendChild(myElement);
+
 
 let mydiv = document.querySelector('div');
-let mydiv1 = document.querySelector('[id=elzero]');
+let mydiv1 = document.querySelector('[id=samih]');
 let mydiv2 = document.querySelector('[class=element]');
 let mydiv3 = document.querySelector('[name=js]');
 let mydiv4 = document.querySelectorAll('div');
-let mydiv5 = document.getElementById('elzero');
+let mydiv5 = document.getElementById('samih');
 let mydiv6 = document.getElementsByClassName('element');
 let mydiv7 = document.getElementsByName('js');
 let mydiv8 = document.getElementsByTagName('div');
@@ -31,6 +93,7 @@ console.log(mydiv10[0]);
 //////////////////////////////////////////////////////////
 
 let myimages = document.querySelectorAll('.images1 div');
+console.log(myimages);
 
 for(let i=0;i<myimages.length;i++)
 {

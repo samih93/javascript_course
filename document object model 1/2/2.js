@@ -3,7 +3,6 @@ let classesList = [];
 let addclassfield = document.querySelector('.classes-to-add');
 let removeclassfield = document.querySelector('.classes-to-remove');
  let resultdiv = document.querySelector('.result');
-
  
 
  addclassfield.addEventListener('blur', (event) => {
@@ -34,11 +33,9 @@ let removeclassfield = document.querySelector('.classes-to-remove');
         else
         {   
             const index = classesList.indexOf(elementToAdd);
-if (index > -1) {
-    classesList.splice(index, 1);
-}
-
-    
+            if (index > -1) {
+                classesList.splice(index, 1);
+            }
         }
     });
     if(classesList.length>0)
