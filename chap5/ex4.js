@@ -1,11 +1,12 @@
-function title(str) {
+function effacerSpace(str) {
 
-    var ar = str.split(' ');
-    var res = "";
-    ar.forEach((e) => {
-        res += e[0].toString().toUpperCase() + e.substring(1).toLowerCase() + " ";
-    });
+    var res="";
+    for(i=0;i<str.length;i++)
+    {
+        if(str[i]!=" ")
+        res+=str[i];
+    }
     return res;
 }
 
-console.log(title("bonjour TOUT LE monde"));
+console.log(effacerSpace(" ab c mnp xyz ")); //→ "abcmnpxyz"
