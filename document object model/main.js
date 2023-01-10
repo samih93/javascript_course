@@ -14,6 +14,71 @@
   ------ links
 */
 
+//var btn = document.getElementById('btn_click');
+let btn1 = document.querySelector('.mybuttonClass');
+let email = document.querySelector('.email');
+let mymessage = document.querySelector('.mymessage');
+
+
+
+// email.addEventListener('focus', (event) => {
+//  console.log("focus");
+// });
+
+
+email.onchange = function(){
+  if(verifierPassword(email.value.trim().toString()))
+  {
+ 
+   mymessage.classList.add('hidden');
+  }
+  else
+  { 
+  
+   mymessage.classList.remove('hidden');
+ }
+}
+
+
+function verifierPassword(str)
+{
+    var ishasOneCapital = false;
+    var ishasOneLower = false;
+    var ishasSpecialCaracter = false;
+    if(str.length<8)
+    return false;
+    else
+    {
+        // u can loop as u want like for(i=0;i<str.length;i++)
+      str.split('').forEach(function(e){
+        if(e=='$') // here u can add more special caracter (e=='$' || e=='@' .... etc)
+        {
+            ishasSpecialCaracter = true;
+        }
+        // if e not a special caracter 
+        else
+        {
+            // if e is string 
+            if(isNaN(e))
+            {   
+                console.log(e);
+                // if e aleady lowerCase 
+                if(e == e.toLowerCase())
+                    ishasOneLower = true;
+                
+                // if e aleady UpperCase 
+                if(e==e.toUpperCase())
+                ishasOneCapital = true;
+            }               
+        }
+        
+       
+
+
+      });
+   }
+   return ishasOneCapital && ishasOneLower && ishasSpecialCaracter ? true:false
+}
 
 /*
   BOM [Browser Object Model]
@@ -79,15 +144,15 @@
   --- onsubmit
 */
 
-let myBtn = document.getElementById("btn");
+// let myBtn = document.getElementById("btn_click");
 
-myBtn.onmouseleave = function () {
-  console.log("Clicked");
-};
+// myBtn.onclick = function () {
+//   console.log("click");
+// };
 
-window.onresize = function () {
-  console.log("resizing");
-};
+// window.onresize = function () {
+//   console.log("resizing");
+// };
 
 
 // let mydiv = document.querySelector('div');
